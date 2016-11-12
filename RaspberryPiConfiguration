@@ -15,7 +15,12 @@ lsusb
 dmesg | grep tty 
 
 #SSH Config change 
+/ect/ssh/ssh_config 
+#auskommentieren:
+SendEnv LANG LC_*
+
 #locale change
+sudo dpkg-reconfigure locale 
 
 #To configure gpsd run if it doesnt work change the text file config (next step)
 sudo dpkg-reconfigure gpsd
