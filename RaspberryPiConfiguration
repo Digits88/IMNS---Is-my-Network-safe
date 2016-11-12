@@ -57,6 +57,46 @@ cd kismet
 make 
 sudo make suidinstall 
 
+# Search wifi device name 
+ifconfig 
+
+#Kismet configuration file change 
+sudo nano /usr/local/etc/kismet.conf 
+
+#Uncomment line and change wlan0 to your adapter
+ncsource=wlan0
+
+#Change 
+#Do we have a GPS?
+gps=true 
+
+# Do we use a locally serial attached GPS, or use a gpsd server, or
+# use a fixed virtual gps?
+# (Pick only one)
+gpstype=gpsd
+# Host:port that GPSD is running on. This can be localhost OR remote!
+gpshost=localhost:2947
+
+#Check that all devices are attached, start kismet 
+sudo kismet 
+
+#automatically start 
+yes
+
+#startup options 
+keep default settings
+
+#next close console window gui will start now
+
+
+#to stop the process
+Kismet Menu
+Quit 
+Stop Kismet Server
+
+#If you want to disconnect SSH you can Quit Kismet and choose "Background" 
+
+
 
 
 
