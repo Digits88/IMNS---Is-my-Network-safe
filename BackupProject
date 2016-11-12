@@ -1,1 +1,5 @@
-
+#-always Backup a Project
+# When our SD card breaks down we needed a backup we easily created it with 
+sudo dd if=/dev/sdb of=imagename.img bs=4M
+# DiskImager Linux 
+Read the data
