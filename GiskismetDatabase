@@ -1,0 +1,12 @@
+# Download Giskismet
+
+# install dependencies 
+apt-get -y install libxml-libxml-perl 
+apt-get -y install libdbi-perl 
+apt-get -y install libdbd-sqlite3-perl
+
+# open database 
+giskismet -x Kismet-20110221-08-56-26-1.netxml
+
+# export to Google Earth
+giskismet -q &quot;select * from wireless&quot; -o giskismet_demo.kml
