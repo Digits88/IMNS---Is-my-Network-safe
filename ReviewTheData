@@ -1,0 +1,15 @@
+#We show you how you can review the data from a Kismet scan.
+
+#use command less for opening .netxml files
+less Kismet-20161112-19-00-0.netxml
+
+#Mapping Data for Visualization on Google Maps 
+wget http://files.salecker.org/netxml2kml/netxml2kml.py.txt
+
+#convert file to python script
+mv netxml2kml.py.txt netxml2kml.py
+
+#Now Map the data
+sudo python netxml2kml.py --kmz --kml -o NEW-MAPFILE kismet_file.netxml
+
+#Goto Google Earth and open the KML File now you have all informations with GPS coordinates.
