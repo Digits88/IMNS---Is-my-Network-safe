@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsMyNetSafe</title>
+    <link href="../styles/indexstyle.css" type="text/css" rel="stylesheet" />
+    <link href="../data/stylesheets/icon-font/css/font-awesome.css" type="text/css" rel="stylesheet" />
+    <script src="../data/javascripts/jquery.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="pagestrukt">
+        <header class="headerstrukt">
+            <img alt="Firmenlogo" src="../data/images/imnslogotest.png">
+        </header>
+        <section class="pagemidSec">
+            <article>
+                <div class="searchwrap">
+                    <input type="text" name="networkname" class="labelInput" placeholder="Geben Sie Ihren Netzwerknamen ein..." id="networknameInput" />
+                    <div class="searchicon">
+                        <i class="fa fa-search fa-2x" aria-hidden="true" id="searchpic"></i>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="resultInfo">
+            <div class="resultInfoData">
+                <div class="labelInfoData">
+                    <p>
+                        <label>Netzwerkname:</label>
+                    </p>
+                    <p>
+                        <label>Hersteller:</label>
+                    </p>
+                    <p>
+                        <label>GPS-Koordinaten:</label>
+                    </p>
+                    <p>
+                        <label>Verschlüsselung:</label>
+                    </p>
+                </div>
+                <div class="labelResultData">
+                    <input type="text" id="networkname" />
+                    <br />
+                    <input type="text" id="manuf" />
+                    <br />
+                    <input type="text" id="gps_koords" />
+                    <br />
+                    <input type="text" id="encryption" />
+                    <br />
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>
