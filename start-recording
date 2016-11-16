@@ -1,5 +1,5 @@
 #Start-Network Recording
-
+#!/bin/bash
 cgps -s 
 
 sudo kismet
